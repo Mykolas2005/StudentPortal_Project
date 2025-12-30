@@ -31,9 +31,9 @@ class LoginTest {
 	@Test
 	void testRequestTranscriptSuccess() {
 		LoginService loginService = new LoginService();
-		// This will show a RED ERROR because the method doesn't exist yet
 		boolean requested = loginService.requestTranscript("student@student.tus.ie");
 		
 		assertTrue(requested, "Transcript request should be successful for a valid student");
 	}
+
 }
